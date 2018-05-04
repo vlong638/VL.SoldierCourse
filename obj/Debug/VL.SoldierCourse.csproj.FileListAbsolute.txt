@@ -1,0 +1,5 @@
+C:\VLWorkshop\WorkingSpace\Repository\Git\VL.Tests\VL.SoldierCourse\obj\Debug\VL.SoldierCourse.csprojResolveAssemblyReference.cache
+C:\VLWorkshop\WorkingSpace\Repository\Git\VL.Tests\VL.SoldierCourse\obj\Debug\SoldierCourse\Window.baml
+C:\VLWorkshop\WorkingSpace\Repository\Git\VL.Tests\VL.SoldierCourse\obj\Debug\SoldierCourse\Window.g.cs
+C:\VLWorkshop\WorkingSpace\Repository\Git\VL.Tests\VL.SoldierCourse\obj\Debug\VL.SoldierCourse_MarkupCompile.cache
+C:\VLWorkshop\WorkingSpace\Repository\Git\VL.Tests\VL.SoldierCourse\obj\Debug\VL.SoldierCourse.g.resources
