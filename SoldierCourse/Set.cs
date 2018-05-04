@@ -13,6 +13,7 @@ namespace VL.SoldierCourse
 
         public UIApplication UIApplication;
         public Document Document { get { return UIApplication.ActiveUIDocument.Document; } }
+        public UIDocument UIDocument { get { return UIApplication.ActiveUIDocument; } }
         public SCViewModel ViewModel { set; get; }
 
         /// <summary>
@@ -29,8 +30,8 @@ namespace VL.SoldierCourse
         {
             try
             {
-                SQLiteHelper.PrepareTables(false);
-                SCContext.InitByUIDocument(uiDoc);
+                //SQLiteHelper.PrepareTables(false);
+                SCContext.InitByUIDocument(UIDocument);
                 ViewModel.Execute();
                 return true;
             }

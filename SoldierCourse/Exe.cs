@@ -9,7 +9,7 @@ namespace VL.SoldierCourse
         public static Result Execute(ExternalCommandData commandData, ref string message, Autodesk.Revit.DB.ElementSet elements)
         {
             SCSet set = new SCSet(commandData.Application);
-            if (set.DoCmd())
+            if (set.Execute())
                 return Result.Succeeded;
             else
                 return Result.Failed;

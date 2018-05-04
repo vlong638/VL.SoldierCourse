@@ -14,7 +14,7 @@ namespace VL.SoldierCourse
         {
             get
             {
-                return new Guid("B0DAAC24-32EB-478C-B8A3-3D71E3CFC232");
+                return new Guid("687AECB1-0821-473B-9781-A5C7B00180C6");
             }
         }
         public string StorageName { get { return "SC_Schema"; } }

@@ -6,7 +6,7 @@ namespace VL.SoldierCourse
 {
     public enum SCViewType
     {
-        Idle,
+        ViewWindow,
         Close,//主动触发
         Closing,//关闭前触发
         Closed,//关闭后触发
@@ -45,7 +45,7 @@ namespace VL.SoldierCourse
         {
             switch (ViewType)
             {
-                case SCViewType.Idle:
+                case SCViewType.ViewWindow:
                     View = new SCWindow(this);
                     View.ShowDialog();
                     break;

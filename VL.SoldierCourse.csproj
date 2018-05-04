@@ -59,6 +59,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLLs_System\System.Drawing.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -90,17 +91,11 @@
     <Compile Include="SoldierCourse\Set.cs" />
     <Compile Include="SoldierCourse\StorageEntity.cs" />
     <Compile Include="SoldierCourse\ViewModel.cs" />
+    <Compile Include="SoldierCourseCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoldierCourse\Window.xaml.cs">
       <DependentUpon>Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SoldierCourseCommand.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="SoldierCourse\Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DLLs\ManagedMC3.dll" />
@@ -125,6 +120,15 @@
     <Content Include="DLLs_System\ReachFramework.dll" />
     <Content Include="DLLs_System\System.Drawing.dll" />
     <Content Include="DLLs_System\WindowsBase.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SoldierCourse\Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="0504Template.rar" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

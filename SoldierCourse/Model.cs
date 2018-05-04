@@ -69,7 +69,7 @@ namespace VL.SoldierCourse
         }
         public void LoadESData(Document doc)
         {
-            JCStorageEntity StorageEntity = new JCStorageEntity();
+            SCStorageEntity StorageEntity = new SCStorageEntity();
             VLTransactionHelper.DelegateRevitTransaction(doc, nameof(LoadESData), () =>
             {
                 LoadData(ExtensibleStorageHelper.GetData(doc, StorageEntity, StorageEntity.FieldOfData));

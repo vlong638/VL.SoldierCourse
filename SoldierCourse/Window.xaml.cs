@@ -12,7 +12,7 @@ namespace VL.SoldierCourse
         #region Construction
         public override bool IsNormalClose()
         {
-            return ViewModel.ViewType == SCViewType.Idle;
+            return ViewModel.ViewType == SCViewType.ViewWindow;
         }
         public override void ViewModelClose()
         {
@@ -37,19 +37,5 @@ namespace VL.SoldierCourse
             ViewModel = viewModel;
         }
         #endregion
-
-        private void Btn_FilterDate_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            if (!ViewModel.SelectedDate.HasValue)
-            {
-                MainContext.ShowMessage("请选中日期");
-                return;
-            }
-
-            //TODO
-            //ViewModel.ViewTypeValue=
-
-
-        }
     }
 }

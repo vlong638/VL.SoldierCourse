@@ -7,27 +7,7 @@
              xmlns:vl="clr-namespace:VL.UserControls;assembly=VL.UserControls"
              Title="预警检测"
              Width="140" Height="60" Background="White">
-    <local:VLWindow.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../ResourceDictionary.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </local:VLWindow.Resources>
     <Grid>
-        <StackPanel Orientation="Horizontal">
-            <Button Style="{StaticResource IconButton}"  Width="18" Height="18" Click="Btn_FilterDate_Click">
-                <Button.Background>
-                    <ImageBrush ImageSource="../../icon/搜索.png"/>
-                </Button.Background>
-                <Button.ToolTip>
-                    <TextBlock>
-                        根据时间过滤数据
-                    </TextBlock>
-                </Button.ToolTip>
-            </Button>
-            <vl:VLDatePicker Name="datePicker" Date="{Binding SelectedDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-        </StackPanel>
     </Grid>
 </local:VLWindow>
 
